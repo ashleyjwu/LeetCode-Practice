@@ -19,7 +19,7 @@ public:
                         list = list->next;
                         list1 = list1->next;
                     }
-                    if(b<=a){
+                    else{
                         list->next = new ListNode(b);
                         list = list->next;
                         list2 = list2->next;
@@ -32,7 +32,7 @@ public:
                 }
                 
             }
-            else if(list2!=nullptr){ //case 3: list1 doesn't exist, list2 exists
+            else{ //case 3: list1 doesn't exist, list2 exists
                 b = list2->val;
                 list->next = new ListNode(b);
                 list = list->next;
